@@ -29,7 +29,7 @@ npm install
 
 ### Running the app
 
-```sh
+````sh
 npm start
 
 Visit http://localhost:3000 in your browser.
@@ -42,7 +42,6 @@ itemHeight (number): Height of each item in pixels.
 containerHeight (number): Height of the scrollable container in pixels.
 Example in App.js:
 
-```
-
+```js
 <VirtualizedList items={USER_DATA} containerHeight={500} itemHeight={30} />
-```
+````
