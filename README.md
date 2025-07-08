@@ -10,11 +10,11 @@ A simple React app demonstrating list virtualization: efficiently rendering only
 
 ## Project Structure
 
-- `src/VirtualizedList/VirtualizedList.jsx` – Virtualized list component.
-- `src/lib/Constants.js` – Sample user data.
-- `src/utils/utils.js` – Utility functions (e.g., `throttle`).
-- `src/App.js` – App entry, renders the virtualized list.
-- `src/index.js` – React app bootstrap.
+- `src/VirtualizedList/VirtualizedList.jsx` – Virtualized list component
+- `src/lib/Constants.js` – Sample user data
+- `src/utils/utils.js` – Utility functions (e.g., `throttle`)
+- `src/App.js` – App entry, renders the virtualized list
+- `src/index.js` – React app bootstrap
 
 ## Getting Started
 
@@ -24,24 +24,26 @@ A simple React app demonstrating list virtualization: efficiently rendering only
 git clone https://github.com/your-username/ListVirtualizationReact.git
 cd ListVirtualizationReact
 npm install
-
 ```
 
-### Running the app
+### Running the App
 
-````sh
+```sh
 npm start
+```
 
-Visit http://localhost:3000 in your browser.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-Usage
-The VirtualizedList component accepts:
+## Usage
 
-items (array): List of items to display (each with id and name).
-itemHeight (number): Height of each item in pixels.
-containerHeight (number): Height of the scrollable container in pixels.
-Example in App.js:
+The `VirtualizedList` component accepts:
 
-```js
+- `items` (array): List of items to display (each with `id` and `name`)
+- `itemHeight` (number): Height of each item in pixels
+- `containerHeight` (number): Height of the scrollable container in pixels
+
+**Example in `App.js`:**
+
+```jsx
 <VirtualizedList items={USER_DATA} containerHeight={500} itemHeight={30} />
-````
+```
